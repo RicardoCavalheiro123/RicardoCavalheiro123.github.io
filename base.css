@@ -261,7 +261,7 @@ a:focus {
 	position: absolute;
 	pointer-events: none;
 	transform: scale3d(1.01,1.01,1);
-	filter: grayscale(80%);
+	filter: grayscale(50%);
 
 }
 
@@ -511,6 +511,10 @@ a:focus {
 	color: white;
 }
 
+.yellowGradient{
+	background-image: linear-gradient(to right, #ffa17f, #00223e);
+	color: white;
+}
 .redText{
 	background: -webkit-linear-gradient(#D4145A, #583700);
   	-webkit-background-clip: text;
@@ -519,6 +523,11 @@ a:focus {
 
 .blueText{
 	background: -webkit-linear-gradient(#009FFD, #2A2A72);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.yellowText{
+	background: -webkit-linear-gradient(#ffa17f, #00223e);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }

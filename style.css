@@ -22,6 +22,10 @@ header{
     padding: 3vh 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
+
+}
+header > nav{
+    display: flex;
 }
 nav{
     display: flex;
@@ -47,7 +51,7 @@ nav{
 
 }
 .socials i:hover{
-    color: #b1b1b1;
+    
     transform: scale(1.2);
 }
 #about{
@@ -158,12 +162,13 @@ h1{
 
 #hover1{
     width: 100%;
-    text-align: center;
+
     height: 4vh;
 
     
 
 }
+
 #hover1 span:nth-child(10){
     padding-left: 10px;
 }
@@ -173,14 +178,10 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
     justify-content: center;
- 
     margin-left: 20%;
     margin-right: 20%;
-
     height:40vh;
-
     padding-bottom: 10vh;
 }
 
@@ -346,13 +347,16 @@ a {
 }
 
 .bluish{
+   
  
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-image: linear-gradient(0deg, #000046 0%, #1cb5e0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 
 }
+
+
 
 
 
@@ -415,6 +419,26 @@ ul li a:hover::before{
 
 }
 
+header a > i{
+    font-size: 1.5rem;
+    color: var(--clr);
+    margin: 0 0.5rem;
+    transition: 0.2s;
+}
+
+#textAboutme{
+    text-align: left;
+    width: 100%;
+    
+
+}
+
+#buttonAboutme{
+
+  align-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
 
 
-
+}
