@@ -13,14 +13,22 @@
     user-select: none;
 }
 
-body{
-    background-color: rgba(247,247,247,247)
+body.loading{
+    background-color: black;
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
 }
 
 header{
-    
+    height: 8vh;
     padding: 3vh 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
 
 
 }
@@ -37,7 +45,8 @@ nav{
     padding-left: 5vw;
 }
 #home{
-    width: 40%;
+    width: 10%;
+    margin-right: 30%;
 }
 .socials{
     width: 10%;
@@ -62,11 +71,30 @@ nav{
 }
 header a{
     text-decoration: none;
-    color: #000000;
+    color: white;
     font-size: 1.3rem;
     font-weight: bold;
     padding: 0 1vw;
+    display: inline-block;
 
+}
+
+header button{
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+header button:hover{
+
+    color: #007bff;
+
+    text-decoration: underline;
 }
 
 .main{
@@ -74,6 +102,8 @@ header a{
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 92vh;
+
 
 }
 
@@ -104,6 +134,17 @@ header a{
     object-position: center;
 
     
+}
+video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+
 }
 .information > .name{
     font-size: 3rem;
@@ -154,6 +195,16 @@ h1{
 
 }
 
+#textAboutme .hovered-adjacent{
+    color: #b1b1b1;
+    
+    font-weight: 500;
+
+}
+
+
+
+
 #hover1 span{
     font-size: 1.5rem;
     font-weight: 500;
@@ -161,10 +212,11 @@ h1{
 }
 
 #hover1{
-    width: 100%;
+    
 
     height: 4vh;
-
+    color: white;
+    margin-right: 50%;
     
 
 }
@@ -340,6 +392,13 @@ a {
   
 }
 
+.mini{
+    background: -webkit-linear-gradient(#30e8bf, #ff8235);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .moonlight{
     font-weight: 900;
     background: -webkit-linear-gradient( #0f2027, #2c5364); 
@@ -350,13 +409,17 @@ a {
 .bluish{
    
  
-    background-image: linear-gradient(0deg, #000046 0%, #1cb5e0 100%);
+    background-image: linear-gradient(0deg, #f1f1f7 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 
 }
-
+.green{
+    background: -webkit-linear-gradient(#4ac29a, #bdfff3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -427,11 +490,24 @@ header a > i{
     transition: 0.2s;
 }
 
+header button > i{
+    font-size: 1.5rem;
+    color: var(--clr);
+    margin: 0 0.5rem;
+    transition: 0.2s;
+}
+
 #textAboutme{
     text-align: left;
-    width: 100%;
     
+    color: white;
+ 
+    font-size: medium;
 
+}
+#textAboutme p{
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 #buttonAboutme{
@@ -440,6 +516,29 @@ header a > i{
     margin-top: 10px;
     margin-bottom: 10px;
     color: #000000;
+
+
+}
+
+.text{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+#contactme{
+   height: 30%;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px #000000;
 
 
 }
