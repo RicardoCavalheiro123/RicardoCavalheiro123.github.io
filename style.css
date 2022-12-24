@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
+html
+{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -526,19 +530,71 @@ header button > i{
 }
 #contactme{
    height: 30%;
-    width: 100%;
-    background-color: #000000;
+
+    background-color: #06152a;
     color: white;
     text-align: center;
     margin-top: 15vh;
     margin-bottom: 15vh;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 10px;
     border: 1px solid #000000;
     box-shadow: 0 0 10px #000000;
+    margin-left: 30%;
+    margin-right: 30%;
+  
+   
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 0px 10px #FFFFFF;
+    -moz-box-shadow: 0px 0px 10px #FFFFFF;
+    box-shadow: 0px 0px 10px #FFFFFF;
 
 
+}
+
+#contactme .l{
+    text-align: left;
+}
+#contactme h5{
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ 
+}
+#contactme h6{
+    font-size: 20px;
+
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ 
+
+}
+#contactme a{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#contactme a:hover{
+    color: #acdceb;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#contactme h3{
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ 
 }

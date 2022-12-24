@@ -1,3 +1,4 @@
+
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml7 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter bluish'>$&</span>");
@@ -71,7 +72,7 @@ document.getElementById("hover1").addEventListener("mouseleave", (e) => {
 });
 
 //About Me
-let phrase2 = "I am a Software Engineering Student at FEUP, passionate about programming and always looking for new challenges.";
+let phrase2 = "I am a Informatics and Computing Engineering Student at FEUP, passionate about programming and always looking for new challenges.";
 let targetEle = document.getElementById("textAboutme");
 phrase2 = phrase2.split("").map((letter, index) => {
     let el = document.createElement("span");
@@ -143,3 +144,4 @@ button.addEventListener('click', function() {
   // Use the scrollIntoView() method to scroll to the section
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+

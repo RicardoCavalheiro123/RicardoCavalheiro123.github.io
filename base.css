@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #f1f1f1;
-    --color-bg: #0c0c0c;
+    --color-bg: #1f1e2e;
     --color-link: #1ab3de;
     --color-link-hover: #f1f1f1;
 	--color-deco: #141414;
@@ -17,7 +17,7 @@ body {
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
-	background-color: var(--color-bg);
+	background: linear-gradient(to bottom, #000, #151d2c, #050d18);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	padding-top: 10rem;
@@ -194,13 +194,13 @@ a:focus {
 
 .slideshow__deco {
 	grid-area: slide;
-	background: var(--color-deco);
-	width: 100%;
-
+	background: linear-gradient(to bottom, #000, #1b243a, #061427);
+	width: 70%;
+	height: 30%;
 	align-self: center;
 	position: relative;
 	margin: -40px 0 0 0;
-	right: -20px;
+	right: -80px;
 }
 
 .nav {
