@@ -1,22 +1,9 @@
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml7 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter bluish'>$&</span>");
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml7 .letter',
-    translateY: ["1.1em", 0],
-    translateX: ["0.55em", 0],
-    translateZ: 0,
-    rotateZ: [180, 0],
-    duration: 750,
-    easing: "easeOutExpo",
-    delay: (el, i) => 50 * i
-  });
+
 
 //Job Title
-let phrase = "Software Engineer";
+let phrase = "Informatics and Computing Engineer Student";
 let targetEl = document.getElementById("hover1");
 phrase = phrase.split("").map((letter, index) => {
     let el = document.createElement("span");
@@ -72,6 +59,7 @@ document.getElementById("hover1").addEventListener("mouseleave", (e) => {
 });
 
 //About Me
+/*
 let phrase2 = "I am a Informatics and Computing Engineering Student at FEUP, passionate about programming and always looking for new challenges.";
 let targetEle = document.getElementById("textAboutme");
 phrase2 = phrase2.split("").map((letter, index) => {
@@ -107,7 +95,7 @@ hoverChars2.map((char) => {
 document.getElementById("textAboutme").addEventListener("mouseleave", (e) => {
     removeClasses2();
 });
-
+*/
 
 
 
@@ -144,4 +132,25 @@ button.addEventListener('click', function() {
   // Use the scrollIntoView() method to scroll to the section
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+
+//after 3 seconds, add a class to a element
+setTimeout(function(){
+
+    document.getElementById("1").classList.remove("animate__fadeInLeftBig");
+    document.getElementById("1").classList.add("animate__bounceOutLeft");
+}
+, 2500);
+setTimeout(function(){
+    document.getElementById("2").classList.remove("animate__fadeInLeftBig");
+    document.getElementById("2").classList.remove("animate__delay-4s");
+    document.getElementById("2").classList.add("animate__fadeOutDown");
+}
+, 7000);
+setTimeout(function(){
+    document.getElementById("3").classList.remove("animate__fadeInLeftBig");
+    document.getElementById("3").classList.remove("animate__delay-8s");
+    document.getElementById("3").classList.add("animate__flipOutX");
+}
+, 12500);
+
 

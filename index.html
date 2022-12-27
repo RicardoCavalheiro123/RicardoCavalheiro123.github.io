@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.js"></script>
-    <script src="name.js" defer></script>
+    <script src="js/name.js" defer></script>
+    <script src="js/Gradient.js" defer></script>
+
 
     <script src="https://kit.fontawesome.com/221bee115b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -27,24 +29,24 @@
     
     
         <video width="320" height="240" autoplay loop muted>
-            <source src="Textura - 116820.mp4" type="video/mp4" />
-            <source src="Textura - 116820.ogg" type="video/ogg" />
+            <source src="video/Textura - 116820.mp4" type="video/mp4" />
+            <source src="video/Textura - 116820.ogg" type="video/ogg" />
             Your browser does not support the video tag.
           </video>
      <!--Header-->
         <header>
             <nav>
-                <a href="" id="home"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="" class="" id="home"><i class="fa-solid fa-house green"></i>Home</a>
                 <div class="socials">
-                    <a href="https://www.linkedin.com/in/ricardo-almeida-cavalheiro/" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/ricardo-almeida-cavalheiro/" ><i class="fa-brands fa-linkedin green"></i></a>
                    
-                    <a href="https://github.com/RicardoCavalheiro123" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/RicardoCavalheiro123" ><i class="fa-brands fa-github green"></i></a>
                     
-                    <a href="https://www.instagram.com/ricardocavalheiro/" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ricardocavalheiro/" ><i class="fa-brands fa-instagram green"></i></a>
                     
                 </div>
-                <a href="projects.html" id="about"><i class="fa-solid fa-folder"></i>Projects</a> 
-                <a href="#contactme" id="contact"><i class="fa-solid fa-envelope"></i>Contact me</a> 
+                <a href="projects.html" id="about"><i class="fa-solid fa-folder green"></i>Projects</a> 
+                <a href="#contactme" id="contact"><i class="fa-solid fa-envelope green"></i>Contact me</a> 
              
             </nav>
         </header>
@@ -52,22 +54,35 @@
         <!--Main-->
         <div class="main">
             <div class="information">
-                <div class="photo" data-aos="zoom-in"><img id="profileimage" src="20200730_195439.jpg" alt=""></div>
+                <div class="photo" data-aos="zoom-in"><img id="profileimage" src="img/20200730_195439.jpg" alt=""></div>
                 
                 <div class="name">
                     <h1 class="ml7">
                         <span class="text-wrapper">
-                            <span class ="letters">Ricardo Cavalheiro</span>
+                            
+                            <span class ="letters animate__animated animate__zoomIn green">Ricardo Cavalheiro</span>
+                            
+                     
+         
                         </span>
                     </h1>
                     
                 </div>
                 <div class="text">
-                    <div id="hover1" class="animate__animated animate__backInLeft "></div>
+           
                     <div id="textAboutme" class="animate__animated animate__backInRight animate__delay-1s">
+                        
                 </div>
+                <div class="exp">
+                    <div class="animate__animated animate__fadeInLeftBig" id="1">Hi, my name is <span class="blueText">Ricardo.</span></div>
+                    <div class="animate__animated animate__fadeInLeftBig animate__delay-4s" id="2">I am <span class="blueText">21</span> years old.</div>
+                    <div class="animate__animated animate__fadeInLeftBig animate__delay-8s" id="3">Currently studying Informatics and Computing Engineer at FEUP.</div>
+           
+                </div>
+                <div id="hover1" class="animate__animated animate__zoomIn"></div>
 				</div>
 				<!--<button class="btn btn-outline-dark" id="buttonAboutme">Check Out My Projects</button>-->
+              
 
             </div>
         </div>
@@ -79,16 +94,16 @@
 
     <!--Contact Me-->
     <div data-aos="fade-in" id="contactme">
-        <h3>How to contact me</h3>
+        <h3 class="how">How to<div class="mini">Contact Me</div></h3>
         <div class="l">
-            <h5 data-aos="fade-right"><i class="fa-regular fa-envelope pr-2"></i>Email:</h5>
+            <h5 data-aos="fade-right" class><i class="fa-regular fa-envelope pr-2 green"></i>Email:</h5>
             <div data-aos="flip-right"><a href="mailto:ricardo18-4-2001@hotmail.com">ricardo18-4-2001@hotmail.com</a></div>
 
-            <h5 data-aos="fade-right"><i class="fa-brands fa-linkedin pr-2"></i>LinkedIn</h5>
+            <h5 data-aos="fade-right"><i class="fa-brands fa-linkedin pr-2 green"></i>LinkedIn</h5>
             <div data-aos="flip-right"><a href="https://www.linkedin.com/in/ricardo-almeida-cavalheiro/" >Ricardo Cavalheiro</a></div>
  
         </div>
-
+    
     </div>
 
  
@@ -100,7 +115,7 @@
             offset : 200,
             duration: 1200,
         })
-
+        
       </script>
 
 </body>

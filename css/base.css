@@ -444,6 +444,7 @@ a:focus {
 		writing-mode: vertical-rl;
 		transform: rotate(180deg);
 		z-index: 1000;
+		padding-bottom: 50px;
 	
 	}
 	.content {
@@ -515,8 +516,17 @@ a:focus {
 	background-image: linear-gradient(to right, #ffa17f, #00223e);
 	color: white;
 }
+.orangeGradient{
+	background-image: linear-gradient(to right, #ffbb51, #45c786);
+	color: white;
+}
 .redText{
 	background: -webkit-linear-gradient(#D4145A, #583700);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.orangeText{
+	background: -webkit-linear-gradient(#ffbb51, #45c786);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
