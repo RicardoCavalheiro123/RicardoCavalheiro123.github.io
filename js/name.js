@@ -1,7 +1,4 @@
 
-
-/* Smoothscroll
-   * ------------------------------------------------------ */
 const ssMoveTo = function () {
     const easeFunctions = {
       easeInQuad: function (t, b, c, d) {
