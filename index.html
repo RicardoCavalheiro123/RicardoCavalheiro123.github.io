@@ -36,7 +36,7 @@
             <nav class="column lg-12 main-nav">
                 <ul>
                     <li id="in"  class="scrolled"><a href="#intro" class="smooth-scroll" >Intro</a></li>
-                    <li id="skill" ><a  href="#skills" class="smooth-scroll">Skills</a></li>
+                    <li id="skill" ><a  href="#myskills" class="smooth-scroll">Skills</a></li>
                     <li id="m" ><a href="#more" class="smooth-scroll">Contact</a></li>
                     <li ><a href="projects.html" class="smooth-scroll">Projects</a></li>
                 
@@ -44,18 +44,24 @@
                 </ul>
             </nav>
         </header>
+        <div class="check_toggle">
+            <input type="checkbox" id="darkmode-toggle"/>
+            <label for="darkmode-toggle">
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path fill-rule="nonzero" d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/> </g> </svg>
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
+            </label>
+        </div>
         <div class="page">
-           
-               
-              
-            </div>
+          
+       
+            
             <div class="container d-flex">
                 <div class="aboutme" id="intro">
 
                     <div class="information">
                         <div class="name">
                                 
-                            <p class ="letters green">Ricardo Cavalheiro</p>                                 
+                            <p class ="letters green with-line text-pretitle">Ricardo Cavalheiro</p>                                 
                         
                         </div>
                         
@@ -143,6 +149,10 @@
                                 <div class="skill_name nameText">POSTGRESQL</div>
                                 <img src="img/postgresql.png" alt="postgresql" class="skill_img">
                             </div>
+                            <div class="skill">
+                                <div class="skill_name nameText">SQLITE</div>
+                                <img src="img/sqlite.png" alt="sqlite" class="skill_img">
+                            </div>
 
                         </div>
                             
@@ -161,10 +171,7 @@
                                 <div class="skill_name nameText">Express</div>
                                 <img src="img/express.png" alt="express" class="skill_img">
                             </div>
-                            <div class="skill">
-                                <div class="skill_name nameText">Express</div>
-                                <img src="img/express.png" alt="express" class="skill_img">
-                            </div>
+                         
 
 
                     </div>
@@ -208,6 +215,7 @@
                                 <div> 
                                     <i class="fa-solid fa-envelope-open-text mail fa_l"></i>
                                 </div>
+                            </a>
                         </div>
                         </div>
                         
@@ -216,6 +224,8 @@
                 </div>
             </div>
         </div>
+
+       
       
     </main>
  
@@ -248,6 +258,13 @@
         targets: '#check_projects',
         opacity: [0, 1], // Change the opacity from 0 to 1
     });
+
+    anime({
+        targets: '.skill_hovered',
+        translateX: 250,
+        easing: 'easeInOutSine'
+    });
+   
     </script>
     
 </body>

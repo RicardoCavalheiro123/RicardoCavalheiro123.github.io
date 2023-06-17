@@ -47,8 +47,7 @@ const ssMoveTo = function () {
     var intro = document.querySelector('#intro').offsetTop;
     var skills = document.querySelector('#myskills').offsetTop;
     var more = document.querySelector('#more').offsetTop;
-    console.log(scrollPosition);
-    console.log(intro, skills, more);
+
 
     
     if (scrollPosition < skills) {
@@ -70,3 +69,49 @@ const ssMoveTo = function () {
 });
 
 
+
+
+// Get all the .skill div elements
+const skills = document.querySelectorAll('.skill_img');
+
+// Add event listeners to each skill div
+skills.forEach(skill => {
+  skill.addEventListener('mouseover', () => {
+    skill.classList.add('skill_hovered');
+    anime({
+      targets: skill,
+      // Define the desired animation properties using Anime.js syntax
+      // Example animation: scaling and rotating the skill div
+      scale: 1.2,
+      rotate: '1turn',
+      duration: 700,
+      easing: 'easeOutSine'
+    });
+  });
+
+  skill.addEventListener('mouseout', () => {
+    skill.classList.remove('skill_hovered');
+    anime({
+      targets: skill,
+      // Reset the animation properties when mouse leaves
+      scale: 1,
+      rotate: '0turn',
+      duration: 700,
+      easing: 'easeOutSine'
+    });
+  });
+});
+
+
+
+var checkbox = document.querySelector("input[type=checkbox]");
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    document.querySelector('body.loading').classList.add('bright');
+    document.querySelector('.header_row').classList.add('bright');
+  } else {
+    document.querySelector('body.loading').classList.remove('bright');
+    document.querySelector('.header_row').classList.remove('bright');
+  }
+});
