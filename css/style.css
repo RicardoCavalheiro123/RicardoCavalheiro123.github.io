@@ -1246,7 +1246,7 @@ label {
     height:65px;
     position: relative;
     display: block;
-    background: #242424;
+    background: #93c8ff;
     border-radius: 200px;
     box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
     cursor: pointer;
@@ -1259,7 +1259,7 @@ label {
     position: absolute;
     top:10px;
     left:10px;
-    background: linear-gradient(180deg,#777,#3a3a3a);
+    background: linear-gradient(180deg,#46f,#3a3a3a);
  
     border-radius: 180px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
