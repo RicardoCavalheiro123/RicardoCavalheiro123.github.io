@@ -45,7 +45,7 @@ const ssMoveTo = function () {
     var header = document.querySelector('.header_row');
     var scrollPosition = window.scrollY;
     var intro = document.querySelector('#intro').offsetTop;
-    var skills = document.querySelector('#myskills').offsetTop;
+    var skills = document.querySelector('#myskills').offsetTop-20;
     var more = document.querySelector('#more').offsetTop;
 
 
@@ -115,3 +115,36 @@ checkbox.addEventListener('change', function() {
     document.querySelector('.header_row').classList.remove('bright');
   }
 });
+
+var i = 0;
+
+var skills_sections = ["frontend", "backend", "database", "frameworks"];
+
+
+skills_sections.forEach(function(section) {
+  var sectionElement = document.getElementById(section);
+  var skills = sectionElement.getElementsByClassName("skill");
+
+  var del = 0;
+  for (var i = 0; i < skills.length; i++) {
+    var skill = skills[i];
+
+ 
+
+    ScrollReveal().reveal(skill, {
+        delay: del,
+        duration: 900,
+        reset: true,
+        easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        rotate: {
+          x: 0,
+          y: 80,
+          z: 0
+        },
+    });
+    del = del + 200;
+
+  }
+});
+  
+  
