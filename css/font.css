@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Aileron-Black;
+    src: url("../aileron/Aileron-Black.otf");
+}
+@font-face {
+    font-family: Aileron-BlackItalic;
+    src: url("../aileron/Aileron-BlackItalic.otf");
+
+}
+@font-face {
+    font-family: Aileron-Bold;
+    src: url("../aileron/Aileron-Bold.otf");
+}
+@font-face {
+    font-family: Aileron-BoldItalic;
+    src: url("../aileron/Aileron-BoldItalic.otf");
+}
+@font-face {
+    font-family: Aileron-Heavy;
+    src: url("../aileron/Aileron-Heavy.otf");
+}
+@font-face {
+    font-family: Aileron-HeavyItalic;
+    src: url("../aileron/Aileron-HeavyItalic.otf");
+}
+@font-face {
+    font-family: Aileron-Italic;
+    src: url("../aileron/Aileron-Italic.otf");
+
+}
+@font-face {
+    font-family: Aileron-Light;
+    src: url("../aileron/Aileron-Light.otf");
+}
+@font-face {
+    font-family: Aileron-LightItalic;
+    src: url("../aileron/Aileron-LightItalic.otf");
+}
+@font-face {
+    font-family: Aileron-Regular;
+    src: url("../aileron/Aileron-Regular.otf");
+}
+@font-face {
+    font-family: Aileron-SemiBold;
+    src: url("../aileron/Aileron-SemiBold.otf");
+}
+@font-face {
+    font-family: Aileron-SemiBoldItalic;
+    src: url("../aileron/Aileron-SemiBoldItalic.otf");
+}
+@font-face {
+    font-family: Aileron-Thin;
+    src: url("../aileron/Aileron-Thin.otf");
+}
+@font-face {
+    font-family: Aileron-ThinItalic;
+    src: url("../aileron/Aileron-ThinItalic.otf");
+}
+@font-face {
+    font-family: Aileron-UltraLight;
+    src: url("../aileron/Aileron-UltraLight.otf");
+}
+@font-face {
+    font-family: Aileron-UltraLightItalic;
+    src: url("../aileron/Aileron-UltraLightItalic.otf");
+}
+
+@font-face {
+    font-family: PP;
+    src: url("../aileron/PPNeueMontreal-Regular.woff2");
+}

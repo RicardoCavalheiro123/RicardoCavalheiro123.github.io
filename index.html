@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
     <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,100' rel='stylesheet' type='text/css'>
@@ -27,15 +28,29 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
     <script src="js/name.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+   
+    <script src="js/loading_screen.js" defer></script>
 
- 
+
 
     <script src="https://kit.fontawesome.com/221bee115b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
 </head>
 <body class="loading">
-     
+    <div class="loading-container">
+        <div class="loading-screen" style="top: calc(0px);">
+   
+            <div class="rounded-div-wrap top">
+                <div class="loading_text_div">
+                  <h2 class="loading_text"><div class="dot"></div>Bem-vindo</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
     <main>
         <header class="header_row">
             <nav class="column lg-12 main-nav">
@@ -233,44 +248,11 @@
        
       
     </main>
- 
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="js/anime.min.js"></script>
 
-    <script>
-    var tl = anime.timeline({
-
-        opacity: [0, 1], // Change the opacity from 0 to 1
-        duration: 600,
-        
-        easing: 'easeInOutQuad'
-    });
-
-    tl.add({
-        targets: '.header_row',
-        opacity: [0, 1], // Change the opacity from 0 to 1
-    });
-      
-    tl.add({
-        targets: '.name',
-        opacity: [0, 1], // Change the opacity from 0 to 1
-    });
-    tl.add({
-        targets: '.subText',
-        opacity: [0, 1], // Change the opacity from 0 to 1
-    });
-
-    tl.add({
-        targets: '#check_projects',
-        opacity: [0, 1], // Change the opacity from 0 to 1
-    });
-
-    anime({
-        targets: '.skill_hovered',
-        translateX: 250,
-        easing: 'easeInOutSine'
-    });
-   
-    </script>
     
 </body>
 </html>

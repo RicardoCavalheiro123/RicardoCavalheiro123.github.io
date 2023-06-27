@@ -128,9 +128,7 @@ skills_sections.forEach(function(section) {
   var del = 0;
   for (var i = 0; i < skills.length; i++) {
     var skill = skills[i];
-
- 
-
+   
     ScrollReveal().reveal(skill, {
         delay: del,
         duration: 900,
