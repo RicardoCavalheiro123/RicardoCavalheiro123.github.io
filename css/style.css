@@ -599,7 +599,7 @@ header button > i{
     background: -webkit-linear-gradient(bottom, #d0e0fa, #edf6fa);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 900;
    
 }
@@ -755,6 +755,13 @@ h3.how{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.bright .sublimeText{
+    background: linear-gradient(to right, #14643c, #6a82fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
 .sublimeText{
     background: linear-gradient(to right, #fc5c7d, #6a82fb);
     -webkit-background-clip: text;
@@ -815,7 +822,7 @@ img.photo{
     filter: grayscale(50%);
 }
 .aboutme{
-    width: 85%;
+    width: 100%;
     min-height: 90vh;
     padding: 10%;
     padding-top: 20%;
@@ -849,7 +856,7 @@ img.photo{
 }
 
 .subText{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     margin-bottom: 15px;
@@ -961,7 +968,7 @@ header nav {
 }
 header a {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 6.4rem;
     text-transform: uppercase;
@@ -977,7 +984,7 @@ header a {
     border-color: black;
 }
 .bright .scrolled{
-    background-color: var(--background-color-bright);
+    background-color: #e1ecfb;
 
 }
 header a:hover {
@@ -1125,7 +1132,7 @@ header li {
 }
 
 .skills_title{
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
@@ -1332,7 +1339,7 @@ label {
   }
 
   .bright p.letters{
-    background: -webkit-linear-gradient(#25634e, #79a19a);
+    background: -webkit-linear-gradient(#236cb1, #79a19a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 

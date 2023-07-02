@@ -6,7 +6,51 @@ init_LoadScreen = function() {
     });
     let texts = ["Bem-vindo", "Tervetuloa", "Bienvenue", "欢迎", "Willkommen", "Добро пожаловать", "환영합니다", "أهلاً وسهلاً", "Welkom","ברוך הבא", "Welcome",""]
     let loadingText = document.querySelector('.loading_text');
+    let loadingContainer = document.querySelector('.loading-container');
+    setTimeout(() => {
+               
+        let loadingContainer = document.querySelector('.loading-container');
+        loadingContainer.style.animation = 'fadeout 1s forwards';
+        document.querySelector('main').style.display = 'block';
+        var tl = anime.timeline({
+
+            opacity: [0, 1], // Change the opacity from 0 to 1
+            duration: 600,
+            
+            easing: 'easeInOutQuad'
+        });
     
+        tl.add({
+            targets: '.header_row',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+        });
+          
+        tl.add({
+            targets: '.name',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+        });
+        tl.add({
+            targets: '.subText',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+        });
+    
+        tl.add({
+            targets: '#check_projects',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+        });
+        tl.add({
+            targets: '#myskills',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+        });
+
+     
+       
+        setTimeout(() => {
+          loadingContainer.style.display = 'none';
+        }, 1000);
+    }, 4000);
+  
+
 
     
 
@@ -27,7 +71,7 @@ init_LoadScreen = function() {
         if (currentIndex === texts.length-1) {
             clearInterval(timer);
 
-            setTimeout(() => {
+            /*setTimeout(() => {
                
                 let loadingContainer = document.querySelector('.loading-container');
                 loadingContainer.style.animation = 'fadeout 1s forwards';
@@ -63,7 +107,7 @@ init_LoadScreen = function() {
                 setTimeout(() => {
                   loadingContainer.style.display = 'none';
                 }, 1000);
-            }, 2000);
+            }, 2000);*/
           
         }
     }, 200);
