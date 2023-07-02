@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+    .header_row{
+        display: none;
+    }
+    .name .letters{
+        font-size: 3rem;
+       
+    }
+    .information .name{
+        padding-top: 10vh;
+    }
+    .check_toggle{
+        right: 5vh;
+        top: 3vh;
+    }
+    .btn.cta{
+        margin-right: 0;
+    }
+    .subText {
+        font-size: 1.5rem;
+    }
+    .skills_title {
+        font-size: 3rem;
+    }
+    .sub .skills{
+        flex-direction: column!important;
+    }
+    .sub .skills .skill {
+        align-self:center;
+        height: 15vh;
+        width: 15vh;
+    }
+    *{
+        outline: 1px solid red;
+    }
+    .socials_links {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
