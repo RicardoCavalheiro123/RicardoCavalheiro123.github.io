@@ -43,9 +43,9 @@ const ssMoveTo = function () {
 
     window.addEventListener('scroll', function() {
     var header = document.querySelector('.header_row');
-    var scrollPosition = window.scrollY;
+    var scrollPosition = window.scrollY+20;
     var intro = document.querySelector('#intro').offsetTop;
-    var skills = document.querySelector('#myskills').offsetTop-20;
+    var skills = document.querySelector('#myskills').offsetTop;
     var more = document.querySelector('#more').offsetTop;
 
 

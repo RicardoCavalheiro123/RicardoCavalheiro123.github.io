@@ -15,6 +15,8 @@
     }
     .btn.cta{
         margin-right: 0;
+        letter-spacing: 0.25em;
+        align-self: center;
     }
     .subText {
         font-size: 1.5rem;
@@ -29,10 +31,18 @@
         align-self:center;
         height: 15vh;
         width: 15vh;
+        margin-top: 8vh;
     }
     
     .socials_links {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
+    .slideshow__deco{
+        display: none;
+    }
+    .frame {
+        top: 0;
+    }
+    
 }
