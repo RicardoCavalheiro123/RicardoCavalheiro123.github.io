@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 :root {
+    --current-rotation-angle: 0deg;
+    --opposite-rotation-angle: 360deg;
     --animate-duration: 2s;
     --background-color: #030b16;
     --background-color-bright: #f4f7fb;
@@ -1418,3 +1420,14 @@ label {
     from { opacity: 1; }
     to { opacity: 0; }
   }
+
+.lottie{
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+#l1{
+    display: none;
+}

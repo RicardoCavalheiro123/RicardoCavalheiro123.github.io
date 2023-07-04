@@ -116,6 +116,18 @@ checkbox.addEventListener('change', function() {
   }
 });
 
+ScrollReveal().reveal('#l2,#l3,#l4,#l5', {
+    delay: 200,
+    duration: 900,
+
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    rotate: {
+      x: 0,
+      y: 80,
+      z: 0
+    },
+    
+});
 var i = 0;
 
 var skills_sections = ["frontend", "backend", "database", "frameworks"];
@@ -132,7 +144,7 @@ skills_sections.forEach(function(section) {
     ScrollReveal().reveal(skill, {
         delay: del,
         duration: 900,
-        reset: true,
+ 
         easing: 'cubic-bezier(0.5, 0, 0, 1)',
         rotate: {
           x: 0,
@@ -145,4 +157,19 @@ skills_sections.forEach(function(section) {
   }
 });
   
-  
+function getRotationAngle() {
+  const astronaut = document.querySelector('.astronaut');
+  const style = window.getComputedStyle(astronaut);
+  const transform = style.getPropertyValue('transform');
+  const matrix = transform.match(/^matrix\((.+)\)$/);
+
+  if (matrix) {
+    const values = matrix[1].split(', ');
+    const a = parseFloat(values[0]);
+    const b = parseFloat(values[1]);
+    let angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+    angle = (angle < 0 ? 360 + angle : angle); // Adjust the angle to range from 0 to 360
+    return angle;
+  }
+}
+

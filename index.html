@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,100' rel='stylesheet' type='text/css'>
 
-    <link rel="icon" type="image/gif" href="img/pf.png">
+    <link rel="icon" type="image/gif" href="img/pf.jpg">
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Latest compiled and minified CSS -->
@@ -33,13 +33,16 @@
    
     <script src="js/loading_screen.js" defer></script>
 
-
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
     <script src="https://kit.fontawesome.com/221bee115b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
 </head>
 <body class="loading">
+ 
+     
+ 
     <div class="loading-container">
         <div class="loading-screen" style="top: calc(0px);">
    
@@ -92,13 +95,18 @@
                             <p>Excited to pursue a master's degree in 2023/2024.</p>
 
                         </div>
-                        <a href="projects.html" class="btn cta smoothscroll opac0" id="check_projects">
-                            Check out my projects
-                        </a>
+                        <div class="d-flex flex-row">
+                            <a href="projects.html" class="btn cta smoothscroll opac0" id="check_projects">
+                                Check out my projects
+                            </a>
+                            <lottie-player id="l1" src="https://assets9.lottiefiles.com/packages/lf20_WMwjZpLAMp.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"loop autoplay></lottie-player>
+                        </div>
+                        
                         
                     
         
                     </div>
+                    
 
                 </div>
                
@@ -107,7 +115,10 @@
                     <p class="skills_title">My Skills</p>
 
                     <div class="sub">
-                        <p>Frontend Development</p>
+                        <div class="d-flex flex-row lottie">
+                            <p>Front-end Development</p>
+                            <lottie-player id="l2" src="https://assets5.lottiefiles.com/packages/lf20_4XK2EVOCqi.json"  background="transparent"  speed="0.8"  style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                        </div>
                         <div class="skills d-flex flex-row " id="frontend">
                             <div class="skill">
                                 <div class="skill_name nameText">HTML</div>
@@ -127,7 +138,10 @@
                                
                             </div>
                         </div>
-                        <p>Backend Development</p>
+                        <div class="d-flex flex-row lottie">
+                            <p>Back-end Development</p>
+                            <lottie-player id="l3"  src="video/VBfpzJb06L.json" background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>     
+                        </div>
                         <div class="skills d-flex flex-row " id="backend">
                             <div class="skill">
                                 <div class="skill_name nameText">C</div>
@@ -155,7 +169,10 @@
                                 <img src="img/nodejs.png" alt="nodejs" class="skill_img">
                             </div>
                         </div>
-                        <p>Database</p>
+                        <div class="d-flex flex-row lottie">
+                            <p class="position-relative">Database</p>
+                            
+                            <lottie-player id="l4"  src="https://assets1.lottiefiles.com/packages/lf20_qp1q7mct.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  autoplay></lottie-player>  </div>
                         <div class="skills d-flex flex-row " id="database">
                             <div class="skill">
                                 <div class="skill_name nameText">MySQL</div>
@@ -175,9 +192,10 @@
                             </div>
 
                         </div>
-                            
-                                
-                        <p>Frameworks</p>
+                        <div class="d-flex flex-row lottie">
+                            <p>Frameworks</p>
+                            <lottie-player id="l5" src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>     
+                        </div>
                         <div class="skills d-flex flex-row " id="frameworks">
                             <div class="skill">
                                 <div class="skill_name nameText">Laravel</div>
@@ -253,6 +271,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="js/anime.min.js"></script>
 
-    
+    <script>
+        
+        ScrollReveal().reveal('.astronaut', {delay:2200,origin:'left'});
+      
+    </script>
 </body>
 </html>

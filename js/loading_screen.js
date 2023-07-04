@@ -1,4 +1,34 @@
+// Disable scrolling
+function disableScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+// Enable scrolling
+function enableScroll() {
+    document.body.style.overflow = '';
+}
+// Disable clicks
+function disableClick() {
+    document.addEventListener('click', preventDefault);
+    document.addEventListener('contextmenu', preventDefault);
+}
+
+// Enable clicks
+function enableClick() {
+    document.removeEventListener('click', preventDefault);
+    document.removeEventListener('contextmenu', preventDefault);
+}
+
+// Prevent default action
+    function preventDefault(event) {
+    event.preventDefault();
+    }
+
+  
+
 init_LoadScreen = function() {
+    disableClick();
+    disableScroll();
     anime({
         targets: '.skill_hovered',
         translateX: 250,
@@ -12,6 +42,8 @@ init_LoadScreen = function() {
         let loadingContainer = document.querySelector('.loading-container');
         loadingContainer.style.animation = 'fadeout 1s forwards';
         document.querySelector('main').style.display = 'block';
+        enableClick();
+        enableScroll();
         var tl = anime.timeline({
 
             opacity: [0, 1], // Change the opacity from 0 to 1
@@ -33,15 +65,25 @@ init_LoadScreen = function() {
             targets: '.subText',
             opacity: [0, 1], // Change the opacity from 0 to 1
         });
-    
+           
         tl.add({
             targets: '#check_projects',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+        });
+        tl.add({
+            targets: '#l1',
             opacity: [0, 1], // Change the opacity from 0 to 1
         });
         tl.add({
             targets: '#myskills',
             opacity: [0, 1], // Change the opacity from 0 to 1
         });
+        tl.add({
+            targets: '#2,#3,#4,#5',
+            opacity: [0, 1], // Change the opacity from 0 to 1
+
+        });
+        document.querySelector('#l1').style.display = 'block';
 
      
        
@@ -50,7 +92,6 @@ init_LoadScreen = function() {
         }, 1000);
     }, 4000);
   
-
 
     
 
