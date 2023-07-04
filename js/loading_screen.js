@@ -20,15 +20,19 @@ function enableClick() {
 }
 
 // Prevent default action
-    function preventDefault(event) {
+function preventDefault(event) {
     event.preventDefault();
-    }
+}
 
-  
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
 
 init_LoadScreen = function() {
     disableClick();
     disableScroll();
+
+    scrollToTop();
     anime({
         targets: '.skill_hovered',
         translateX: 250,
@@ -83,7 +87,7 @@ init_LoadScreen = function() {
             opacity: [0, 1], // Change the opacity from 0 to 1
 
         });
-        document.querySelector('#l1').style.display = 'block';
+       
 
      
        
